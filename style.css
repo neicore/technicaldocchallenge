@@ -58,7 +58,7 @@ body {
 }
 
 .blue-color {
-    color: rgb(18, 185, 236);
+    color: #12b9ec;
     text-decoration: none;
 }
 
@@ -95,6 +95,11 @@ body {
 #navbar>ul>li:last-child {
     border-bottom: none;
     padding: 0;
+}
+
+.heading-style{
+    background-color: #a9ebff;
+    padding: 5px;
 }
 
 .code-block {
