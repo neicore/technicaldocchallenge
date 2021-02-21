@@ -163,6 +163,15 @@ footer>p {
 
     #navbar {
         width: fit-content;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+    }
+
+    .footer-flex{
+        justify-content: center;
+        margin: auto;
+        padding: 0;
     }
 
     .footer-flex>img {
