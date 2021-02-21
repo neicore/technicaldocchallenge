@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="shortcut icon" href="https://img.icons8.com/fluent/48/000000/doge.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Doge Lang Documentation</title>
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <header class="header">
+
+        <nav class="navbar">
+
+            <img src="https://img.icons8.com/fluent/48/000000/doge.png" alt="Doge Lang Logo" class="logo">
+
+            <ul class="nav-menu">
+                <li><a href="https://golang.org/doc/" target="_blank">Documents</a></li>
+                <li><a href="https://golang.org/pkg/" target="_blank">Packages</a></li>
+                <li><a href="https://golang.org/project/" target="_blank">The Project</a></li>
+                <li><a href="https://golang.org/help/" target="_blank">Help</a></li>
+                <li><a href="https://golang.org/blog/" target="_blank">Blog</a></li>
+                <li><a href="https://play.golang.org/" target="_blank">Play</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-lower">
+            <h1>Welcome to Doge Lang Docs</h1>
+            <p><em>There is no Doge lang btw, this is just a practice project</em></p>
+            <p><em>*I am using <a href="https://golang.org/doc" class="blue-color" target="_blank">Go Lang Docs</a> as a
+                    reference*</em></p>
+        </div>
+    </header>
+
+    <div class="main-flex">
+        <aside id="navbar">
+            <ul>
+                <li><a href="#getting-started" class="blue-color">Getting started with Doge lang</a></li>
+                <li><a href="#prerequisites" class="blue-color">Prerequisites</a></li>
+                <li><a href="#install-doge" class="blue-color">Install Doge</a></li>
+                <li><a href="#write-some-code" class="blue-color">Write Some Code</a></li>
+                <li><a href="#call-code" class="blue-color">Call code in an external package</a></li>
+                <li><a href="#write-more-code" class="blue-color">Write more code</a></li>
+                <li><a href="#write-more-code" class="blue-color"> </a></li>
+            </ul>
+        </aside>
+        <main id="main-docs">
+            <section class="main-section" id="getting-strated">
+                <header>
+                    <h2>Getting started with Doge lang</h2>
+                </header>
+
+                <p>In this tutorial, you'll get a brief introduction to Doge programming. Along the way, you will: </p>
+
+                <ul>
+                    <li>Install Doge (if you haven't already).</li>
+                    <li>Use the Doge command to run your code.</li>
+                    <li>Use the Doge package discovery tool to find packages you can use in your own code.</li>
+                    <li>Call functions of an external module.</li>
+                </ul>
+
+                <p><b>Note: </b>For other tutorials, see <a href="https://golang.org/doc/tutorial/index.html"
+                        class="blue-color" target="_blank">Tutorials</a></p>
+            </section>
+
+            <section class="main-section" id="prerequisites">
+                <header>
+                    <h2>Prerequisites</h2>
+                </header>
+                <ul>
+                    <li><b>Some programming experience.</b> The code here is pretty simple, but it helps to know
+                        something about functions.</li>
+                    <li><b>A tool to edit your code.</b>Any text editor you have will work fine. Most text editors have
+                        good support for Doge. The most popular are VSCode (free), DogeLand (paid), and Vim (free).</li>
+                    <li><b>A command terminal.</b>Doge works well using any terminal on Linux and Mac, and on PowerShell
+                        or cmd in Windows.</li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="install-doge">
+                <header>
+                    <h2>Install Doge</h2>
+                </header>
+                <p>Just use the <a href="" class="blue-color">Download and install</a> steps.</p>
+            </section>
+
+            <section class="main-section" id="write-some-code">
+                <header>
+                    <h2>Write some code</h2>
+                </header>
+
+                <p>Get started with Hello, World.</p>
+
+                <ol>
+                    <li>Open a command prompt and cd to your home directory.
+                        <p>On Linux or Mac: </p>
+                        <code class="code-block">cd</code>
+                        <p>On Windows: </p>
+                        <code class="code-block">cd %HOMEPATH%</code> <br>
+                    </li>
+
+                    <li>Create a hello directory for your first Doge source code.
+                        <p>For example, use the following commands: </p>
+                        <code class="code-block">mkdir hello <br> <br>
+                            cd hello</code> <br>
+                    </li>
+
+                    <li>Initialize a new module for tracking dependencies.
+                        <p>When your code imports packages from another module, a doge.mod file lists the specific
+                            modules
+                            and versions providing those packages. That file stays with your code, including in your
+                            source code repository.</p>
+                        <p>To create a doge.mod file, run the <a
+                                href="https://golang.org/cmd/go/#hdr-Initialize_new_module_in_current_directory"
+                                class="blue-color" target="_blank"> doge
+                                mod
+                                init command</a>, giving it the name of the module your code will be in (here, just use
+                            "hello"): </p>
+                        <code class="code-block">$ doge mod init hello <br> <br>
+                            doge: creating new doge.mod: module hello</code>
+                        <br>
+                    </li>
+
+                    <li>In your text editor, create a file hello.doge in which to write your code.</li>
+
+                    <li>Paste the following code into your hello.doge file and save the file. <br> <br>
+                        <code class="code-block">
+                            package main
+                            <br> <br>
+                            import "fmt"
+                            <br> <br>
+                            func main() {
+                            <br>
+                            fmt.Println("Hello, World!")
+                            <br>
+                            }
+                        </code>
+                        <p>This is your Doge code. In this code, you: </p>
+                        <ul>
+                            <li>Declare a main package (a package is a way to group functions, and it's made up of all
+                                the files in the same directory).</li>
+                            <li>Import the popular <a href="https://golang.org/pkg/fmt/" class="blue-color"
+                                    target="_blank">fmt package</a>, which contains
+                                functions for formatting text, including printing to the console. This package is one of
+                                the <a href="https://golang.org/pkg/" class="blue-color" target="_blank">standard
+                                    library</a>packages you got when you
+                                installed Doge.</li>
+
+                            <li>Implement a main function to print a message to the console. A main function executes by
+                                default when you run the main package.</li>
+                        </ul>
+                    </li>
+
+                    <li>Run your code to see the greeting. <br> <br>
+                        <code class="code-block">$ doge run . <br> Hello, World!</code>
+
+                        <p>The <a href="https://golang.org/cmd/go/#hdr-Compile_and_run_Go_program" class="blue-color"
+                                target="_blank">go run command</a> is
+                            one of many go commands you'll use to get things done with Doge. Use the following command
+                            to
+                            get a list of the others: </p>
+
+                        <code class="code-block">$ doge help
+                        </code>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="main-section" id="call-code">
+                <header>
+                    <h2>Call code in an external package</h2>
+                </header>
+
+                <p>When you need your code to do something that might have been implemented by someone else, you can
+                    look for a package that has functions you can use in your code.</p>
+
+                <ol>
+                    <li>
+                        Make your printed message a little more interesting with a function from an external module.
+                        <ol>
+                            <li>Visit pkg.doge.dev and <a href="https://pkg.go.dev/search?q=quote" class="blue-color"
+                                    target="_blank">https://pkg.doge.dev/search?q=quote</a>
+                            </li>
+
+                            <li>Locate and click the <code>rsc.io/quote</code> package in search results (if you see
+                                <code>rsc.io/quote/v3</code>, ignore it for now).</li>
+
+                            <li>On the <b>Doc</b> tab, under <b>Index</b>, note the list of functions you can call from
+                                your code. You'll use the <code>Doge</code> function.</li>
+
+                            <li>At the top of this page, note that package quote is included in the
+                                <code>rsc.io/quote</code> module.</li>
+                        </ol>
+
+                        <p>You can use the pkg.doge.dev site to find published modules whose packages have functions you
+                            can use in your own code. Packages are published in modules -- like
+                            <code>rsc.io/quote</code> -- where others can use them. Modules are improved with new
+                            versions over time, and you can upgrade your code to use the improved versions.</p>
+                    </li>
+
+                    <li>
+                        In your Doge code, import the <code>rsc.io/quote</code> package and add a call to its Doge
+                        function.
+
+                        <p>After adding the highlighted lines, your code should include the following: </p>
+
+                        <code class="code-block">
+                            package main
+                            <br>
+                            <br>
+                            import "fmt"
+                            <br>
+                            <br>
+                            <span class="blue-color">import "rsc.io/quote"</span>
+                            <br>
+                            <br>
+                            func main() {
+                            <br>
+                            <span class="blue-color">fmt.Println(quote.Go</span>
+                            <br>
+                            ())
+                            <br>
+                            }
+                        </code> <br>
+                    </li>
+
+                    <li>Add new module requirements and sums.
+
+                        <p>
+                            Doge will add the quote module as a requirement, as well as a doge.sum file for use in
+                            authenticating the module. For more, see <a
+                                href="https://golang.org/cmd/go/#hdr-Module_authentication_using_go_sum"
+                                class="blue-color" target="_blank">Module
+                                authentication using doge.sum</a>. </p>
+
+                        <code class="code-block">
+                            $ doge mod tidy <br>
+                            doge: finding module for package rsc.io/quote <br>
+                            doge: found rsc.io/quote in rsc.io/quote v1.5.2
+                        </code> <br>
+                    </li>
+
+                    <li>Run your code to see the message generated by the function you're calling.
+                        <br> <br>
+                        <code class="code-block">$ doge run .
+                            <br>
+                            Don't communicate by sharing memory, share memory by communicating.
+                        </code>
+
+                        <p>Don't communicate by sharing memory, share memory by communicating.
+                        </p>
+
+                        <p>When you ran<code>doge mod tidy</code>, it located and downloaded
+                            the<code>rsc.io/quote</code> module that contains the package you imported. By default, it
+                            downloaded the latest version -- v1.5.2.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="main-section" id="write-more-code">
+
+                <header>
+                    <h2>Write more code</h2>
+                </header>
+
+                <p>
+                    With this quick introduction, you got Doge installed and learned some of the basics. To write some
+                    more code with another tutorial, take a look at <a
+                        href="https://golang.org/doc/tutorial/create-module.html" class="blue-color"
+                        target="_blank">Create a Doge module</a>.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+
+        <div class="footer-flex">
+            <img src="https://img.icons8.com/fluent/48/000000/doge.png" alt="Doge Lang Logo">
+            <ul>
+                <li>Copyright</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Report a website issue</li>
+            </ul>
+        </div>
+        <p>Supported by <a href="https://en.wikipedia.org/wiki/Shiba_Inu" class="blue-color" target="_blank">Shiba
+                Inu</a></p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener(
+            'click', () => document.querySelector('.nav-menu').classList.toggle('show'));
+    </script>
+</body>
+
+</html>
